@@ -1,0 +1,74 @@
+[
+  {
+    "name": "About",
+    "path": "/About",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\About.vue",
+    "chunkName": "pages/About"
+  },
+  {
+    "name": "Art",
+    "path": "/Art",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\Art.vue",
+    "chunkName": "pages/Art"
+  },
+  {
+    "name": "ArtSingle",
+    "path": "/ArtSingle",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\ArtSingle.vue",
+    "chunkName": "pages/ArtSingle"
+  },
+  {
+    "name": "Blog",
+    "path": "/Blog",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\Blog.vue",
+    "chunkName": "pages/Blog"
+  },
+  {
+    "name": "BlogSingle",
+    "path": "/BlogSingle",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\BlogSingle.vue",
+    "chunkName": "pages/BlogSingle"
+  },
+  {
+    "name": "Contact",
+    "path": "/Contact",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\Contact.vue",
+    "chunkName": "pages/Contact"
+  },
+  {
+    "name": "Support",
+    "path": "/Support",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\Support.vue",
+    "chunkName": "pages/Support"
+  },
+  {
+    "name": "blog-author-author",
+    "path": "/blog/author/:author?",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\blog\\\\author\\\\_author.vue",
+    "chunkName": "pages/blog/author/_author"
+  },
+  {
+    "name": "blog-category-category",
+    "path": "/blog/category/:category?",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\blog\\\\category\\\\_category.vue",
+    "chunkName": "pages/blog/category/_category"
+  },
+  {
+    "name": "art-slug",
+    "path": "/art/:slug?",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\art\\\\_slug.vue",
+    "chunkName": "pages/art/_slug"
+  },
+  {
+    "name": "blog-slug",
+    "path": "/blog/:slug?",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\blog\\\\_slug.vue",
+    "chunkName": "pages/blog/_slug"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
