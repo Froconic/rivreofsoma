@@ -16,28 +16,32 @@
     </section>
     <section class="bg-black blog-posts">
       <div class="container">
-        <Search></Search>
+        <div class="row">
+          <div class="col">
+            <Search></Search>
+          </div>
+        </div>
         <Category :category="category"></Category>
         <div class="row mb-4">
-            <div v-for="article of articles" :key="article.slug" class="col-md-6 col-lg-4">
-                <NuxtLink class="card card-body justify-content-between" :to="{name: 'blog-slug', params: { slug: article.slug }}">
-                  <div class="text-small d-flex">
-                    <div class="mr-2">
-                      <NuxtLink to='/'>{{ article.category }}</NuxtLink>
-                      <span class="text-muted">{{ formatDate(article.createdAt) }}</span>
-                      <span class="badge badge-primary-alt text-primary"><img src="../assets/img/icons/interface/heart.svg" alt=""></span>
-                    </div>
-                  </div>
-                  <img :src="article.cover" alt="">
-                  <div>
-                    <h4>{{ article.title }}</h4>
-                    <p class="flex-grow"> {{ article.description }}</p>
-                    <div class="d-flex align-items-center mt-3">
-                      <span class="text-small text-muted">by </span> <span class="text-small ml-1"> {{ article.author }}</span>
-                    </div>
-                  </div>
-                </NuxtLink>
-            </div>
+          <div v-for="article of articles" :key="article.slug" class="col-md-6 col-lg-4">
+            <NuxtLink class="card card-body justify-content-between" :to="{name: 'blog-slug', params: { slug: article.slug }}">
+              <div class="text-small d-flex">
+                <div class="mr-2">
+                  <NuxtLink to='/'>{{ article.category }}</NuxtLink>
+                  <span class="text-muted">{{ formatDate(article.createdAt) }}</span>
+                  <span class="badge badge-primary-alt text-primary"><img src="../assets/img/icons/interface/heart.svg" alt=""></span>
+                </div>
+              </div>
+              <img :src="article.cover" alt="">
+              <div>
+                <h4>{{ article.title }}</h4>
+                <p class="flex-grow"> {{ article.description }}</p>
+                <div class="d-flex align-items-center mt-3">
+                  <span class="text-small text-muted">by </span> <span class="text-small ml-1"> {{ article.author }}</span>
+                </div>
+              </div>
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </section>
