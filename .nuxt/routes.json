@@ -2,73 +2,85 @@
   {
     "name": "About",
     "path": "/About",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\About.vue",
-    "chunkName": "pages/About"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\About.vue",
+    "chunkName": "pages/About",
+    "_name": "_3674a615"
   },
   {
     "name": "Art",
     "path": "/Art",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\Art.vue",
-    "chunkName": "pages/Art"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\Art.vue",
+    "chunkName": "pages/Art",
+    "_name": "_2a7b042a"
   },
   {
     "name": "ArtSingle",
     "path": "/ArtSingle",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\ArtSingle.vue",
-    "chunkName": "pages/ArtSingle"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\ArtSingle.vue",
+    "chunkName": "pages/ArtSingle",
+    "_name": "_63427013"
   },
   {
     "name": "Blog",
     "path": "/Blog",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\Blog.vue",
-    "chunkName": "pages/Blog"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\Blog.vue",
+    "chunkName": "pages/Blog",
+    "_name": "_daf9566c"
   },
   {
     "name": "BlogSingle",
     "path": "/BlogSingle",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\BlogSingle.vue",
-    "chunkName": "pages/BlogSingle"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\BlogSingle.vue",
+    "chunkName": "pages/BlogSingle",
+    "_name": "_75cf389c"
   },
   {
     "name": "Contact",
     "path": "/Contact",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\Contact.vue",
-    "chunkName": "pages/Contact"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\Contact.vue",
+    "chunkName": "pages/Contact",
+    "_name": "_6e604928"
   },
   {
     "name": "Support",
     "path": "/Support",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\Support.vue",
-    "chunkName": "pages/Support"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\Support.vue",
+    "chunkName": "pages/Support",
+    "_name": "_04cf9552"
   },
   {
     "name": "blog-author-author",
     "path": "/blog/author/:author?",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\blog\\\\author\\\\_author.vue",
-    "chunkName": "pages/blog/author/_author"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\blog\\\\author\\\\_author.vue",
+    "chunkName": "pages/blog/author/_author",
+    "_name": "_15205476"
   },
   {
     "name": "blog-category-category",
     "path": "/blog/category/:category?",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\blog\\\\category\\\\_category.vue",
-    "chunkName": "pages/blog/category/_category"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\blog\\\\category\\\\_category.vue",
+    "chunkName": "pages/blog/category/_category",
+    "_name": "_37c14836"
   },
   {
     "name": "art-slug",
     "path": "/art/:slug?",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\art\\\\_slug.vue",
-    "chunkName": "pages/art/_slug"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\art\\\\_slug.vue",
+    "chunkName": "pages/art/_slug",
+    "_name": "_61effacf"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug?",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\blog\\\\_slug.vue",
-    "chunkName": "pages/blog/_slug"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\blog\\\\_slug.vue",
+    "chunkName": "pages/blog/_slug",
+    "_name": "_3a8c8f50"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS2\\\\blog\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_428b3e0c"
   }
 ]

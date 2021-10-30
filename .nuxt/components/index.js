@@ -1,16 +1,16 @@
-export const ArtPrevNext = () => import('../..\\components\\ArtPrevNext.vue' /* webpackChunkName: "components/art-prev-next" */).then(c => wrapFunctional(c.default || c))
-export const Author = () => import('../..\\components\\Author.vue' /* webpackChunkName: "components/author" */).then(c => wrapFunctional(c.default || c))
-export const Category = () => import('../..\\components\\Category.vue' /* webpackChunkName: "components/category" */).then(c => wrapFunctional(c.default || c))
-export const Footer = () => import('../..\\components\\Footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c))
-export const Hero = () => import('../..\\components\\Hero.vue' /* webpackChunkName: "components/hero" */).then(c => wrapFunctional(c.default || c))
-export const HomeFooter = () => import('../..\\components\\HomeFooter.vue' /* webpackChunkName: "components/home-footer" */).then(c => wrapFunctional(c.default || c))
-export const Navbar = () => import('../..\\components\\Navbar.vue' /* webpackChunkName: "components/navbar" */).then(c => wrapFunctional(c.default || c))
-export const NuxtLogo = () => import('../..\\components\\NuxtLogo.vue' /* webpackChunkName: "components/nuxt-logo" */).then(c => wrapFunctional(c.default || c))
-export const PrevNext = () => import('../..\\components\\PrevNext.vue' /* webpackChunkName: "components/prev-next" */).then(c => wrapFunctional(c.default || c))
-export const Related = () => import('../..\\components\\Related.vue' /* webpackChunkName: "components/related" */).then(c => wrapFunctional(c.default || c))
-export const Search = () => import('../..\\components\\Search.vue' /* webpackChunkName: "components/search" */).then(c => wrapFunctional(c.default || c))
-export const Social = () => import('../..\\components\\Social.vue' /* webpackChunkName: "components/social" */).then(c => wrapFunctional(c.default || c))
-export const Tutorial = () => import('../..\\components\\Tutorial.vue' /* webpackChunkName: "components/tutorial" */).then(c => wrapFunctional(c.default || c))
+export { default as ArtPrevNext } from '../..\\components\\ArtPrevNext.vue'
+export { default as Author } from '../..\\components\\Author.vue'
+export { default as Category } from '../..\\components\\Category.vue'
+export { default as Footer } from '../..\\components\\Footer.vue'
+export { default as Hero } from '../..\\components\\Hero.vue'
+export { default as HomeFooter } from '../..\\components\\HomeFooter.vue'
+export { default as Navbar } from '../..\\components\\Navbar.vue'
+export { default as NuxtLogo } from '../..\\components\\NuxtLogo.vue'
+export { default as PrevNext } from '../..\\components\\PrevNext.vue'
+export { default as Related } from '../..\\components\\Related.vue'
+export { default as Search } from '../..\\components\\Search.vue'
+export { default as Social } from '../..\\components\\Social.vue'
+export { default as Tutorial } from '../..\\components\\Tutorial.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

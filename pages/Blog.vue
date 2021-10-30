@@ -16,8 +16,8 @@
     </section>
     <section class="bg-black blog-posts">
       <div class="container">
-        <div class="row">
-          <div class="col">
+        <div class="row justify-content-center mb-4">
+          <div class="col col-md-auto">
             <Search></Search>
           </div>
         </div>
