@@ -14,9 +14,8 @@
                   <h2 class="mb-0"><button class="btn btn-primary btn-lg mx-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Learn More </button></h2>
                 </div>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                  <div class="card-body">The aim of this platform is to become a repository for my expressions. From my thoughts,
-                    wisdom I have gained,
-                    my art and more. I want this to be a nonlocal resource for myself and others to learn more about how to better interface with the seen and unseen reality. RIVRE=Real Insights eVolve REality. SOMA is a multifaceted epithet that can be boiled down to Science Of Metaphysical Art. So browse around and see what delights your fancy </div>
+                  <div class="card-body">Welcome to RIVRE of SOMA! If you were wondering what is RIVRE of SOMA? RIVRE = Real Insights eVolve REality and SOMA is an epithet I use often standing for many things but the most encompassing being Science Of Metaphysical Art. Putting it all together The science of metaphysical arts brings real insights in order to evolve your reality. With that being said my aim with this site is to create a living repository that I can add my wisdom, expressions, art, thoughts, and more. Think of this site as a stream, everflowing that you may never step foot into twice and be the same. Each visit the information gathered here will hit different. As you change and evolve so to will how the layers of information will be received. Think of this as a nonlocal resource that will help you to interface more fluidly with the unseen and seen sides of reality. Step inside and allow the flow of information to take you for a ride!
+ </div>
                 </div>
               </div>
             </div>

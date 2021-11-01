@@ -1,6 +1,6 @@
 <template>
 <div class="art">
-    <section class="bg-primary-2 has-divider text-dark">
+    <section class="bg-primary-2 text-dark">
       <div class="container pb-6">
         <div class="row justify-content-center text-center">
           <div class="col-xl-8 col-lg-9 col-md-10">

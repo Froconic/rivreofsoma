@@ -6,9 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _3674a615 = () => interopDefault(import('..\\pages\\About.vue' /* webpackChunkName: "pages/About" */))
 const _2a7b042a = () => interopDefault(import('..\\pages\\Art.vue' /* webpackChunkName: "pages/Art" */))
-const _63427013 = () => interopDefault(import('..\\pages\\ArtSingle.vue' /* webpackChunkName: "pages/ArtSingle" */))
 const _daf9566c = () => interopDefault(import('..\\pages\\Blog.vue' /* webpackChunkName: "pages/Blog" */))
-const _75cf389c = () => interopDefault(import('..\\pages\\BlogSingle.vue' /* webpackChunkName: "pages/BlogSingle" */))
 const _6e604928 = () => interopDefault(import('..\\pages\\Contact.vue' /* webpackChunkName: "pages/Contact" */))
 const _04cf9552 = () => interopDefault(import('..\\pages\\Support.vue' /* webpackChunkName: "pages/Support" */))
 const _15205476 = () => interopDefault(import('..\\pages\\blog\\author\\_author.vue' /* webpackChunkName: "pages/blog/author/_author" */))
@@ -37,17 +35,9 @@ export const routerOptions = {
     component: _2a7b042a,
     name: "Art"
   }, {
-    path: "/ArtSingle",
-    component: _63427013,
-    name: "ArtSingle"
-  }, {
     path: "/Blog",
     component: _daf9566c,
     name: "Blog"
-  }, {
-    path: "/BlogSingle",
-    component: _75cf389c,
-    name: "BlogSingle"
   }, {
     path: "/Contact",
     component: _6e604928,

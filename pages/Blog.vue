@@ -1,12 +1,12 @@
 <template>
   <div class="blog">
-    <section class="has-divider text-light bg-primary" data-speed="0.5" data-overlay>
+    <section class="text-light bg-primary" data-speed="0.5" data-overlay>
       <!-- <img src="../assets/img/misc/BOG line.svg" alt="" class="jarallax-img opacity-50"> -->
-      <div class="container">
+      <div class="container pb-6">
         <div class="row justify-content-center text-center">
           <div class="col-xl-5 col-lg-6 col-md-8">
-            <h1 class="display-4 text-light">Blog</h1>
-            <p class="lead mb-0">Thoughts on <br>Magic | Mystery | Mysticism</p>
+            <h1 class="display-3 text-light mb-5">Blog</h1>
+            <p class="lead ">Thoughts on <br>Magic | Mystery | Mysticism</p>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
             <Search></Search>
           </div>
         </div>
-        <Category :category="category"></Category>
+        <!-- <Category :category="category"></Category> -->
         <div class="row mb-4">
           <div v-for="article of articles" :key="article.slug" class="col-md-6 col-lg-4">
             <NuxtLink class="card card-body justify-content-between" :to="{name: 'blog-slug', params: { slug: article.slug }}">
@@ -45,7 +45,6 @@
         </div>
       </div>
     </section>
-    <Footer></Footer>
   </div>
 </template>
 

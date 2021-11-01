@@ -14,25 +14,11 @@
     "_name": "_2a7b042a"
   },
   {
-    "name": "ArtSingle",
-    "path": "/ArtSingle",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\ArtSingle.vue",
-    "chunkName": "pages/ArtSingle",
-    "_name": "_63427013"
-  },
-  {
     "name": "Blog",
     "path": "/Blog",
     "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\Blog.vue",
     "chunkName": "pages/Blog",
     "_name": "_daf9566c"
-  },
-  {
-    "name": "BlogSingle",
-    "path": "/BlogSingle",
-    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\BlogSingle.vue",
-    "chunkName": "pages/BlogSingle",
-    "_name": "_75cf389c"
   },
   {
     "name": "Contact",
