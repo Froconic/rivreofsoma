@@ -1,4 +1,7 @@
 {
+  "ArticleList": {
+    "description": "Auto imported from components/ArticleList.vue"
+  },
   "ArtPrevNext": {
     "description": "Auto imported from components/ArtPrevNext.vue"
   },
@@ -23,6 +26,9 @@
   "NuxtLogo": {
     "description": "Auto imported from components/NuxtLogo.vue"
   },
+  "Pagination": {
+    "description": "Auto imported from components/Pagination.vue"
+  },
   "PrevNext": {
     "description": "Auto imported from components/PrevNext.vue"
   },
@@ -37,5 +43,17 @@
   },
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
+  },
+  "SvgDoubleBack": {
+    "description": "Auto imported from components/svg/DoubleBack.vue"
+  },
+  "SvgDoubleFwd": {
+    "description": "Auto imported from components/svg/DoubleFwd.vue"
+  },
+  "SvgSingleBack": {
+    "description": "Auto imported from components/svg/SingleBack.vue"
+  },
+  "SvgSingleFwd": {
+    "description": "Auto imported from components/svg/SingleFwd.vue"
   }
 }

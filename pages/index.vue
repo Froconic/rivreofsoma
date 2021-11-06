@@ -1,6 +1,7 @@
 <template>
 <div>
   <Hero></Hero>
+  <ArticleList />
 <HomeFooter></HomeFooter>
 </div>
 </template>

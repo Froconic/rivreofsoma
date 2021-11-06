@@ -1,5 +1,5 @@
 <template>
-  <div class="blog">
+  <div>
     <section class="text-light bg-primary" data-speed="0.5" data-overlay>
       <!-- <img src="../assets/img/misc/BOG line.svg" alt="" class="jarallax-img opacity-50"> -->
       <div class="container pb-6">
@@ -14,15 +14,14 @@
       <img src="../assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
     </div> -->
     </section>
-    <section class="bg-black blog-posts">
+    <section id="blog-posts" class="bg-black blog-posts">
       <div class="container">
         <div class="row justify-content-center mb-4">
           <div class="col col-md-auto">
             <Search></Search>
           </div>
-        </div>
-        <!-- <Category :category="category"></Category> -->
           <ArticleList :articles="paginatedArticles" :total="allArticles.length" />
+        </div>
       </div>
     </section>
   </div>
@@ -30,39 +29,34 @@
 
 <script>
   import getContent from '@/utils/getContent';
-
+  import ArticleList from '@/components/ArticleList';
   export default {
+    name: 'ArticleListPage',
+    components: {
+      ArticleList,
+    },
     async asyncData({
       $content,
-      params
+      app,
+      params,
+      error
     }) {
-      const articles = await $content('articles').only(['title', 'description', 'category', 'img', 'cover', 'slug', 'author', 'createdAt']).sortBy('createdAt', 'asc').fetch()
-
+      const content = await getContent($content, params, error);
       return {
-        articles
-      }
+        allArticles: content.allArticles,
+        paginatedArticles: content.paginatedArticles,
+      };
     },
-    async asyncData({ $content, app, params, error }) {
-    const content = await getContent($content, params, error);
-    return {
-      allArticles: content.allArticles,
-      paginatedArticles: content.paginatedArticles,
-    };
-  },
-    methods: {
-      formatDate(date) {
-        const options = {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        }
-        return new Date(date).toLocaleDateString('en', options)
-      }
+    head() {
+      return {
+        title: `Articles Page ${this.$route.params.page}`,
+        link: [{
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${this.$config.baseUrl}/blog/page/${this.$route.params.page}`,
+        }, ],
+      };
     },
-  }
+  };
 
 </script>
-
-<style>
-
-</style>

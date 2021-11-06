@@ -11,6 +11,7 @@ const _6e604928 = () => interopDefault(import('..\\pages\\Contact.vue' /* webpac
 const _04cf9552 = () => interopDefault(import('..\\pages\\Support.vue' /* webpackChunkName: "pages/Support" */))
 const _15205476 = () => interopDefault(import('..\\pages\\blog\\author\\_author.vue' /* webpackChunkName: "pages/blog/author/_author" */))
 const _37c14836 = () => interopDefault(import('..\\pages\\blog\\category\\_category.vue' /* webpackChunkName: "pages/blog/category/_category" */))
+const _3e8b3d45 = () => interopDefault(import('..\\pages\\blog\\page\\_page.vue' /* webpackChunkName: "pages/blog/page/_page" */))
 const _61effacf = () => interopDefault(import('..\\pages\\art\\_slug.vue' /* webpackChunkName: "pages/art/_slug" */))
 const _3a8c8f50 = () => interopDefault(import('..\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 const _428b3e0c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
@@ -54,6 +55,10 @@ export const routerOptions = {
     path: "/blog/category/:category?",
     component: _37c14836,
     name: "blog-category-category"
+  }, {
+    path: "/blog/page/:page?",
+    component: _3e8b3d45,
+    name: "blog-page-page"
   }, {
     path: "/art/:slug?",
     component: _61effacf,

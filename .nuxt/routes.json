@@ -49,6 +49,13 @@
     "_name": "_37c14836"
   },
   {
+    "name": "blog-page-page",
+    "path": "/blog/page/:page?",
+    "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\blog\\\\page\\\\_page.vue",
+    "chunkName": "pages/blog/page/_page",
+    "_name": "_3e8b3d45"
+  },
+  {
     "name": "art-slug",
     "path": "/art/:slug?",
     "component": "C:\\\\Users\\\\akira\\\\Vue Projects\\\\ROS-vercel\\\\rivreofsoma\\\\pages\\\\art\\\\_slug.vue",
