@@ -12,7 +12,7 @@
       <img src="@/assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
     </div> -->
   </section>
-  <section class="bg-black text-dark">
+  <section class="bg-black text-white">
     <div class="container">
       <div class="row align-items-center justify-content-around">
         <div class="col-md-5 col-xl-6 mb-4 mb-md-0">

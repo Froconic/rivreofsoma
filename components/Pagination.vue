@@ -39,7 +39,7 @@
 
     <NuxtLink
       v-else
-      :to="{ name: 'blog-page-page', params: { page: nextPage } }"
+      :to="{ params: { page: nextPage } }"
      class="page-link"
     >
       <span class="hidden sm:inline">Next</span>
@@ -73,6 +73,11 @@ import DoubleBack from '@/components/svg/DoubleBack';
 import SingleFwd from '@/components/svg/SingleFwd';
 import SingleBack from '@/components/svg/SingleBack';
 export default {
+  // data() {
+  //   return {
+  //   anchor: "#blog-posts"
+  //   }
+  // },
   name: 'Pagination',
   components: {
     DoubleFwd,
@@ -80,6 +85,7 @@ export default {
     SingleFwd,
     SingleBack,
   },
+
   props: {
     total: {
       type: Number,
@@ -91,6 +97,9 @@ export default {
     },
   },
   computed: {
+    //     anchor() {
+    //   return "/" + anchor
+    // },
     buttonStyles() {
       return 'border rounded px-4 py-1 text-sm bg-white flex justify-center items-center sm:uppercase hover:bg-blue-500 hover:text-white transform duration-500 ease-in-out';
     },

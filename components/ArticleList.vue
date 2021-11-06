@@ -24,17 +24,29 @@
     </div>
   </div>
 <div class="row mb-4 justify-content-center">
+  <!-- <infinite-loading spinner="spiral" @infinite="infiniteScroll"></infinite-loading> -->
       <Pagination v-if="total > 5" :total="total" />
 </div>
 </div>
 </template>
 
 <script>
-  import Pagination from '@/components/Pagination';
+  import Pagination from '@/components/Pagination'
+  // import axios from 'axios'
   export default {
+    data() {
+    return {
+      page: 1,
+      titles: [],
+    };
+  },
     name: 'ArticleList',
     components: {
       Pagination,
+    },
+
+    created() {
+      this.fetchData
     },
     props: {
       articles: {
@@ -46,6 +58,7 @@
         default: 0,
       },
     },
+
     methods: {
       formatDate(date) {
         const options = {
@@ -54,9 +67,30 @@
           day: 'numeric'
         }
         return new Date(date).toLocaleDateString('en', options)
-      }
-    },
+      }, 
 
-  };
+      async fetchData(){
+        const response = await axios.get(this.url)
+        this.titles = response.data
+      },
+
+    infiniteScroll($state) {
+setTimeout(() => {
+this.page++
+axios.get(this.url)
+.then((response) => {
+  if (response.data.length > 1) {
+    this.page++
+    // this.list.push(...response.data.hits)
+   response.data.forEach((item) => this.titles.push(item))
+   $state.loaded()
+  } else {
+   $state.complete()
+  }
+ }).catch((err) => {console.log(err)})
+}, 500)
+    }
+    }
+  }
 
 </script>

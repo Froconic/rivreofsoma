@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <section class="bg-black text-dark">
+    <section class="bg-black text-white">
       <div class="container mt-lg-6">
         <div class="row">
           <div class="col">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-black text-dark">
+    <section class="bg-black text-white">
       <div class="container">
         <h2 class="text-center mb-5">Blog</h2>
         <div class="row">
@@ -44,7 +44,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-black text-dark">
+    <section class="bg-black text-white">
       <div class="container">
         <h2 class="text-center mb-5">Art</h2>
         <div class="row">

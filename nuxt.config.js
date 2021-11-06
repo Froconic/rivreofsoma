@@ -62,7 +62,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-     { src: '~/plugins/infiniteloading', ssr: true }
+     { src: '~/plugins/infiniteloading', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -77,7 +77,7 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@forked-prs/nuxt-infinite-scroll-module'
+    // '@forked-prs/nuxt-infinite-scroll-module'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content

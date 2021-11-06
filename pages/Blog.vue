@@ -22,7 +22,8 @@
           </div>
         </div>
         <!-- <Category :category="category"></Category> -->
-          <ArticleList :articles="paginatedArticles" :total="allArticles.length" />
+        <ArticleList :articles="paginatedArticles" :total="allArticles.length" />
+        <InfiniteLoading v-if="list.length" spinner="spiral" @infinite="infiniteScroll"></InfiniteLoading>
       </div>
     </section>
   </div>
@@ -32,6 +33,20 @@
   import getContent from '@/utils/getContent';
 
   export default {
+    data() {
+      return {
+        page: 1,
+        list: [],
+      };
+    },
+    components: {
+
+    },
+
+        created() {
+      this.fetchData
+    },
+
     async asyncData({
       $content,
       params
@@ -42,13 +57,23 @@
         articles
       }
     },
-    async asyncData({ $content, app, params, error }) {
-    const content = await getContent($content, params, error);
-    return {
-      allArticles: content.allArticles,
-      paginatedArticles: content.paginatedArticles,
-    };
-  },
+    async asyncData({
+      $content,
+      app,
+      params,
+      error
+    }) {
+      const content = await getContent($content, params, error);
+      return {
+        allArticles: content.allArticles,
+        paginatedArticles: content.paginatedArticles,
+      };
+    },
+    async fetchData() {
+      const response = await axios.get(this.url)
+      this.list = response.data
+    },
+
     methods: {
       formatDate(date) {
         const options = {
@@ -57,8 +82,26 @@
           day: 'numeric'
         }
         return new Date(date).toLocaleDateString('en', options)
+      },
+      infiniteScroll($state) {
+        setTimeout(() => {
+          this.page++
+          axios.get(this.url)
+            .then((response) => {
+              if (response.data.length > 1) {
+                this.list.push(...response.data.hits)
+                response.data.forEach((item) => this.list.push(item))
+                $state.loaded()
+              } else {
+                $state.complete()
+              }
+            }).catch((err) => {
+              console.log(err)
+            })
+        }, 500)
       }
     },
+
   }
 
 </script>
