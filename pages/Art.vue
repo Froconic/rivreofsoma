@@ -22,12 +22,7 @@
           </div>
         </div>
         <div class="row">
-          <div v-for="artwork of artworks" :key="artwork.slug" class="col-sm-6 col-lg-4 mb-4">
-            <NuxtLink :to="{name:'art-slug',params: { slug: artwork.slug }} ">
-              <img :src="artwork.img" :alt="artwork.alt" class="rounded mb-3">
-              <h4 class="mb-1"> {{artwork.title}} </h4>
-            </NuxtLink>
-          </div>
+            <ArtworkList :artwork="paginatedArtworks" :total="allArtworks" />
         </div>
       </div>
     </section>
@@ -59,6 +54,7 @@
       const response = await axios.get(this.url)
       this.list = response.data
     },
+
 
     methods: {
       formatDate(date) {

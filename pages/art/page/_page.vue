@@ -1,5 +1,4 @@
 <template>
-<!-- Left Off Fixing artwork display -->
   <div>
     <section class="bg-primary-2 text-dark">
       <div class="container pb-6">
@@ -20,33 +19,21 @@
           <div class="col col-md-auto">
             <Search></Search>
           </div>
-          <div class="row">
-            <div v-for="artwork of artworks" :key="artwork.slug" class="col-sm-6 col-lg-4 mb-4">
-              <NuxtLink :to="{name:'art-slug', params: { slug: artwork.slug }} ">
-                <img :src="artwork.img" :alt="artwork.alt" class="rounded mb-3">
-                <h4 class="mb-1"> {{artwork.title}} </h4>
-              </NuxtLink>
-            </div>
-          </div>
-
-          <div class="row">
-            <ArtworkList :artwork="paginatedArtworks" :total="allArtworks.length" />
-          </div>
-          <div>
-          </div>
         </div>
+            <ArtworkList :artworks="paginatedArtworks" :total="allArtworks.length" />
       </div>
     </section>
-
   </div>
 </template>
 
 <script>
   import getArtwork from '~/utils/getArtwork';
+  import ArtworkList from '@/components/ArtworkList'
   export default {
 
     name: 'ArtworkListPage',
-    components: {},
+    components: { ArtworkList,
+    },
 
     async asyncData({
       $content,
@@ -60,6 +47,17 @@
         paginatedArtworks: content.paginatedArtworks,
       };
     },
+    // async asyncData({
+    //   $content,
+    //   params
+    // }) {
+    //   const artworks = await $content('artworks').only(['title', 'description', 'category', 'img', 'cover', 'slug', 'author', 'createdAt']).sortBy('createdAt', 'asc').fetch()
+
+    //   return {
+    //     artworks
+    //   }
+    // },
+
     head() {
       return {
         title: `Artworks Page ${this.$route.params.page}`,

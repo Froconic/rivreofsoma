@@ -18,7 +18,7 @@ export default async ($content, params, error) => {
       return 0;
     }
     if (currentPage === lastPage) {
-      return totalArticles - lastPageCount;
+      return totalArtworks - lastPageCount;
     }
     return (currentPage - 1) * perPage;
   };

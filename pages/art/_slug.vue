@@ -2,7 +2,7 @@
   <div class="art-single">
     <section class="py-0">
       <div class="container-fluid px-lg-0">
-        <div class="row no-gutters">
+        <div class="row no-gutters justify-content-center">
           <div class="col-xl-4  mb-5 pt-5">
       <nuxt-content :document="artwork" />
         <h1 class="text-center"> {{ artwork.title }} </h1>
@@ -11,6 +11,9 @@
         <div class="col">
           <div class="container mb-5">
             <img :src="artwork.img" :alt="artwork.alt">
+          </div>
+          <div class="container mb-5">
+            <strong>{{artwork.description}}</strong>
           </div>
         </div>
       </div>

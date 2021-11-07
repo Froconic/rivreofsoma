@@ -2,6 +2,9 @@
   "ArticleList": {
     "description": "Auto imported from components/ArticleList.vue"
   },
+  "ArtPagination": {
+    "description": "Auto imported from components/ArtPagination.vue"
+  },
   "ArtPrevNext": {
     "description": "Auto imported from components/ArtPrevNext.vue"
   },

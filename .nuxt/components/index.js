@@ -1,4 +1,5 @@
 export { default as ArticleList } from '../..\\components\\ArticleList.vue'
+export { default as ArtPagination } from '../..\\components\\ArtPagination.vue'
 export { default as ArtPrevNext } from '../..\\components\\ArtPrevNext.vue'
 export { default as ArtworkList } from '../..\\components\\ArtworkList.vue'
 export { default as Author } from '../..\\components\\Author.vue'

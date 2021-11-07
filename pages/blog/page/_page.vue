@@ -31,12 +31,6 @@
   import getArticle from '~/utils/getArticle';
   import ArticleList from '@/components/ArticleList';
   export default {
-    // middleware({
-    //   redirect
-    // }) {
-    //   return redirect("301", "/blog");
-    // },
-
     name: 'ArticleListPage',
     components: {
       ArticleList,
