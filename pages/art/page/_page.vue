@@ -1,5 +1,6 @@
 <template>
-<div class="art">
+<!-- Left Off Fixing artwork display -->
+  <div>
     <section class="bg-primary-2 text-dark">
       <div class="container pb-6">
         <div class="row justify-content-center text-center">
@@ -13,34 +14,39 @@
         <img src="../assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
       </div> -->
     </section>
-  <section class="bg-black text-white pt-5">
+    <section class="bg-black text-white pt-5">
       <div class="container">
         <div class="row justify-content-center mb-4">
           <div class="col col-md-auto">
             <Search></Search>
-
           </div>
-        </div>
-        <div class="row">
-          <div v-for="artwork of artworks" :key="artwork.slug" class="col-sm-6 col-lg-4 mb-4">
-            <NuxtLink :to="{name:'art-slug',params: { slug: artwork.slug }} ">
-              <img :src="artwork.img" :alt="artwork.alt" class="rounded mb-3">
-              <h4 class="mb-1"> {{artwork.title}} </h4>
-            </NuxtLink>
+          <div class="row">
+            <div v-for="artwork of artworks" :key="artwork.slug" class="col-sm-6 col-lg-4 mb-4">
+              <NuxtLink :to="{name:'art-slug', params: { slug: artwork.slug }} ">
+                <img :src="artwork.img" :alt="artwork.alt" class="rounded mb-3">
+                <h4 class="mb-1"> {{artwork.title}} </h4>
+              </NuxtLink>
+            </div>
+          </div>
+
+          <div class="row">
+            <ArtworkList :artwork="paginatedArtworks" :total="allArtworks.length" />
+          </div>
+          <div>
           </div>
         </div>
       </div>
     </section>
-</div>
+
+  </div>
 </template>
 
 <script>
+  import getArtwork from '~/utils/getArtwork';
   export default {
-        middleware({
-      redirect
-    }) {
-      return redirect("301", "/art/page/1");
-    },
+
+    name: 'ArtworkListPage',
+    components: {},
 
     async asyncData({
       $content,
@@ -54,26 +60,16 @@
         paginatedArtworks: content.paginatedArtworks,
       };
     },
-
-    async fetchData() {
-      const response = await axios.get(this.url)
-      this.list = response.data
+    head() {
+      return {
+        title: `Artworks Page ${this.$route.params.page}`,
+        link: [{
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${this.$config.baseUrl}/art/${this.$route.params.page}`,
+        }, ],
+      };
     },
-
-    methods: {
-      formatDate(date) {
-        const options = {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        }
-        return new Date(date).toLocaleDateString('en', options)
-      }
-    },
-}
+  };
 
 </script>
-
-<style>
-
-</style>

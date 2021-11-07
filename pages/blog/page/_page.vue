@@ -28,9 +28,15 @@
 </template>
 
 <script>
-  import getContent from '@/utils/getContent';
+  import getArticle from '~/utils/getArticle';
   import ArticleList from '@/components/ArticleList';
   export default {
+    // middleware({
+    //   redirect
+    // }) {
+    //   return redirect("301", "/blog");
+    // },
+
     name: 'ArticleListPage',
     components: {
       ArticleList,
@@ -41,7 +47,7 @@
       params,
       error
     }) {
-      const content = await getContent($content, params, error);
+      const content = await getArticle($content, params, error);
       return {
         allArticles: content.allArticles,
         paginatedArticles: content.paginatedArticles,
@@ -53,7 +59,7 @@
         link: [{
           hid: 'canonical',
           rel: 'canonical',
-          href: `${this.$config.baseUrl}/blog/page/${this.$route.params.page}`,
+          href: `${this.$config.baseUrl}/blog/${this.$route.params.page}`,
         }, ],
       };
     },

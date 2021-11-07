@@ -1,28 +1,13 @@
 <template>
-<div class="article-list">
-  <div class="row mb-4">
-    <div v-for="article of articles" :key="article.slug" class="col-md-6 col-lg-4">
-      <NuxtLink class="card card-body justify-content-between" :to="{name: 'blog-slug', params: { slug: article.slug }}">
-        <div class="text-small d-flex">
-          <div class="mr-2">
-            <NuxtLink to='/'>{{ article.category }}</NuxtLink>
-            <span class="text-muted">{{ formatDate(article.createdAt) }}</span>
-            <span class="badge badge-primary-alt text-primary"><img src="../assets/img/icons/interface/heart.svg" alt=""></span>
+<div class="artwork-list">
+        <div class="row">
+          <div v-for="artwork of artworks" :key="artwork.slug" class="col-sm-6 col-lg-4 mb-4">
+            <NuxtLink :to="{name:'art-slug',params: { slug: artwork.slug }} ">
+              <img :src="artwork.img" :alt="artwork.alt" class="rounded mb-3">
+              <h4 class="mb-1"> {{artwork.title}} </h4>
+            </NuxtLink>
           </div>
         </div>
-        <img :src="article.cover" alt="">
-        <div>
-          <h4>{{ article.title }}</h4>
-          <p class="flex-grow"> {{ article.description }}</p>
-          <div class="d-flex align-items-center mt-3">
-            <span class="text-small text-muted">by </span> <span class="text-small ml-1"> {{ article.author }}</span>
-          </div>
-        </div>
-      </NuxtLink>
-    </div>
-    <div v-if="total" class="container mx-auto my-5 max-w-5xl">
-    </div>
-  </div>
 <div class="row mb-4 justify-content-center">
   <!-- <infinite-loading spinner="spiral" @infinite="infiniteScroll"></infinite-loading> -->
       <Pagination v-if="total > 5" :total="total" />
@@ -31,7 +16,6 @@
 </template>
 
 <script>
-  import Pagination from '@/components/Pagination'
   // import axios from 'axios'
   export default {
     data() {
@@ -40,16 +24,16 @@
       titles: [],
     };
   },
-    name: 'ArticleList',
+    name: 'ArtworkList',
     components: {
-      Pagination,
     },
+    
 
     created() {
       this.fetchData
     },
     props: {
-      articles: {
+      artworks: {
         type: Array,
         default: Array,
       },
@@ -73,6 +57,8 @@
         const response = await axios.get(this.url)
         this.titles = response.data
       },
+    },
+
 
 //     infiniteScroll($state) {
 // setTimeout(() => {
@@ -91,6 +77,5 @@
 // }, 500)
 //     }
     }
-  }
 
 </script>

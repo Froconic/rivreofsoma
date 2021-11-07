@@ -9,6 +9,7 @@ const _2a7b042a = () => interopDefault(import('..\\pages\\Art.vue' /* webpackChu
 const _daf9566c = () => interopDefault(import('..\\pages\\Blog.vue' /* webpackChunkName: "pages/Blog" */))
 const _6e604928 = () => interopDefault(import('..\\pages\\Contact.vue' /* webpackChunkName: "pages/Contact" */))
 const _04cf9552 = () => interopDefault(import('..\\pages\\Support.vue' /* webpackChunkName: "pages/Support" */))
+const _eeac64f8 = () => interopDefault(import('..\\pages\\art\\page\\_page.vue' /* webpackChunkName: "pages/art/page/_page" */))
 const _15205476 = () => interopDefault(import('..\\pages\\blog\\author\\_author.vue' /* webpackChunkName: "pages/blog/author/_author" */))
 const _37c14836 = () => interopDefault(import('..\\pages\\blog\\category\\_category.vue' /* webpackChunkName: "pages/blog/category/_category" */))
 const _3e8b3d45 = () => interopDefault(import('..\\pages\\blog\\page\\_page.vue' /* webpackChunkName: "pages/blog/page/_page" */))
@@ -47,6 +48,10 @@ export const routerOptions = {
     path: "/Support",
     component: _04cf9552,
     name: "Support"
+  }, {
+    path: "/art/page/:page?",
+    component: _eeac64f8,
+    name: "art-page-page"
   }, {
     path: "/blog/author/:author?",
     component: _15205476,

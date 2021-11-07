@@ -39,7 +39,7 @@
 
     <NuxtLink
       v-else
-      :to="{ params: { page: nextPage } }"
+      :to="{  params: { page: nextPage } }"
      class="page-link"
     >
       <span class="hidden sm:inline">Next</span>

@@ -5,6 +5,9 @@
   "ArtPrevNext": {
     "description": "Auto imported from components/ArtPrevNext.vue"
   },
+  "ArtworkList": {
+    "description": "Auto imported from components/ArtworkList.vue"
+  },
   "Author": {
     "description": "Auto imported from components/Author.vue"
   },

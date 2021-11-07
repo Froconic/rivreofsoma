@@ -8,6 +8,7 @@ You can directly use them in pages and other components without the need to impo
 
 - `<ArticleList>` | `<article-list>` (components/ArticleList.vue)
 - `<ArtPrevNext>` | `<art-prev-next>` (components/ArtPrevNext.vue)
+- `<ArtworkList>` | `<artwork-list>` (components/ArtworkList.vue)
 - `<Author>` | `<author>` (components/Author.vue)
 - `<Category>` | `<category>` (components/Category.vue)
 - `<Footer>` | `<footer>` (components/Footer.vue)
