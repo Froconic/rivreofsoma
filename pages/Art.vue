@@ -4,14 +4,11 @@
       <div class="container pb-6">
         <div class="row justify-content-center text-center">
           <div class="col-xl-8 col-lg-9 col-md-10">
-            <h2 class="display-3 mb-5">Art </h2>
+            <h2 class="mb-5 text-dark">Art </h2>
             <p class="lead">Action <br> Reaction <br> Translation</p>
           </div>
         </div>
       </div>
-      <!-- <div class="divider">
-        <img src="../assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
-      </div> -->
     </section>
   <section class="bg-black text-white pt-5">
       <div class="container">

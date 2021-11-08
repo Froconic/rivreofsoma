@@ -4,7 +4,7 @@
       <div v-for="artwork of artworks" :key="artwork.slug" class="col-sm-6 col-lg-4 mb-4">
         <NuxtLink :to="{name:'art-slug',params: { slug: artwork.slug }} ">
           <img :src="artwork.img" :alt="artwork.alt" class="rounded mb-3">
-          <h4 class="mb-1"> {{artwork.title}} </h4>
+          <h4 class="mb-1 text-white text-center"> {{artwork.title}} </h4>
         </NuxtLink>
       </div>
     </div>

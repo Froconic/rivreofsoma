@@ -403,7 +403,7 @@ h6,
   font-family: inherit;
   font-weight: 600;
   line-height: 1.2;
-  color: #EBF4FF;
+  /* color: #EBF4FF; */
 }
 
 h1,
@@ -13083,7 +13083,7 @@ h5,
 .display-2,
 .display-3,
 .display-4 {
-  color: #EBF4FF;
+  /* color: #EBF4FF; */
 }
 
 .display-1,

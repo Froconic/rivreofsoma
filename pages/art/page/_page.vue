@@ -9,9 +9,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="divider">
-        <img src="../assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
-      </div> -->
     </section>
     <section class="bg-black text-white pt-5">
       <div class="container">

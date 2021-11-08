@@ -25,41 +25,17 @@
     </section>
     <section class="bg-black text-white">
       <div class="container">
-        <h2 class="text-center mb-5">Blog</h2>
         <div class="row">
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <NuxtLink to='/'><img src="../assets/img/misc/BGO.svg" alt="Article image" class="rounded mb-3"></NuxtLink><a href="#"></a><a href="#">
-              <h4 class="mb-1">Post 1</h4>
-              <div class="text-small text-muted">Test</div>
-            </a>
+          <div class="col d-flex flex-column">
+            <h2 class="text-center mb-5">Blog</h2>
+            <strong class="text-center mb-2">My Thoughts, Musings and Experiments with Magic, Mysticism and Life</strong>
+            <NuxtLink class="btn btn-primary btn-lg mx-auto" to="/blog">Check it out</NuxtLink>
           </div>
-          <div class="col-sm-6 col-lg-4 mb-4"><a href="#"><img src="../assets/img/misc/BOG.svg" alt="Article image" class="rounded mb-3"></a><a href="#">
-              <h4 class="mb-1">Post 2</h4>
-              <div class="text-small text-muted">Test</div>
-            </a></div>
-          <div class="col-sm-6 col-lg-4 mb-4"><a href="#"><img src="../assets/img/misc/OGB.svg" alt="Article image" class="rounded mb-3"></a><a href="#">
-              <h4 class="mb-1">Post 3</h4>
-              <div class="text-small text-muted">Test</div>
-            </a></div>
-        </div>
-      </div>
-    </section>
-    <section class="bg-black text-white">
-      <div class="container">
-        <h2 class="text-center mb-5">Art</h2>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 mb-4"><a href="#"><img src="../assets/img/misc/BGO.svg" alt="Article image" class="rounded mb-3"></a><a href="#">
-              <h4 class="mb-1">Post 1</h4>
-              <div class="text-small text-muted">Test</div>
-            </a></div>
-          <div class="col-sm-6 col-lg-4 mb-4"><a href="#"><img src="../assets/img/misc/BOG.svg" alt="Article image" class="rounded mb-3"></a><a href="#">
-              <h4 class="mb-1">Post 2</h4>
-              <div class="text-small text-muted">Test</div>
-            </a></div>
-          <div class="col-sm-6 col-lg-4 mb-4"><a href="#"><img src="../assets/img/misc/OGB.svg" alt="Article image" class="rounded mb-3"></a><a href="#">
-              <h4 class="mb-1">Post 3</h4>
-              <div class="text-small text-muted">Test</div>
-            </a></div>
+          <div class="col d-flex flex-column">
+            <h2 class="text-center mb-5">Art</h2>
+            <strong class="text-center mb-2">Expressions: Symbols, Visual Metaphor, Giving Shape to the Unseen </strong>
+            <NuxtLink class="btn btn-primary-2 btn-lg mx-auto" to="/art">See for yourself</NuxtLink>
+          </div>
         </div>
       </div>
     </section>
@@ -67,6 +43,7 @@
 </template>
 
 <script>
+
   export default {
 
   }
