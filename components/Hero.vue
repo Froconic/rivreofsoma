@@ -29,12 +29,12 @@
           <div class="col d-flex flex-column">
             <h2 class="text-center mb-5">Blog</h2>
             <strong class="text-center mb-2">My Thoughts, Musings and Experiments with Magic, Mysticism and Life</strong>
-            <NuxtLink class="btn btn-primary btn-lg mx-auto" to="/blog">Check it out</NuxtLink>
+            <NuxtLink class="btn btn-primary btn-lg mx-auto" to="/blog/page/1">Check it out</NuxtLink>
           </div>
           <div class="col d-flex flex-column">
             <h2 class="text-center mb-5">Art</h2>
             <strong class="text-center mb-2">Expressions: Symbols, Visual Metaphor, Giving Shape to the Unseen </strong>
-            <NuxtLink class="btn btn-primary-2 btn-lg mx-auto" to="/art">See for yourself</NuxtLink>
+            <NuxtLink class="btn btn-primary-2 btn-lg mx-auto" to="/art/page/1">See for yourself</NuxtLink>
           </div>
         </div>
       </div>
