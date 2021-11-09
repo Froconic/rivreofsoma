@@ -1,9 +1,10 @@
+import getRoutes from "./utils/getRoutes";
 export default {
   content: {
     nestedProperties:['author.name']
   },
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'server',
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -21,7 +22,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'pkg.description'
+        content: ''
       },
       {
         name: 'format-detection',
@@ -78,6 +79,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // '@forked-prs/nuxt-infinite-scroll-module'
+    "@nuxtjs/sitemap"
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -85,5 +87,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  sitemap: {
+hostname: 'https://www.rivreofsoma.com/',
+routes() {
+  return getRoutes();
+}
+  },
 }

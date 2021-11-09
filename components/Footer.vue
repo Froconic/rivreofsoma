@@ -25,11 +25,11 @@
         <div class="col-6 col-lg">
           <ul class="list-unstyled">
             <li>
-            <a class="text-primary" href="">
+            <NuxtLink class="text-white" to="/contact">
               <h5><img class="icon" src="../assets/img/icons/theme/communication/mail.svg" alt="mail icon"> Contact</h5>
-            </a>
+            </NuxtLink>
             <div class="ml-3">
-              <a class="text-primary" href="#">hello@company.io</a>
+              <!-- <a class="text-primary" href="#">hello@company.io</a> -->
             </div>
             </li>
           </ul>
