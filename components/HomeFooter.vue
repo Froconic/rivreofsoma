@@ -4,16 +4,7 @@
         <div class="row">
           <div class="col">
             <div class="h1">Questions?</div>
-            <div class="my-5"><a href="#" class="btn btn-lg btn-primary">Get In Touch</a></div>
-          </div>
-        </div>
-        <div class="row mb-4">
-          <div class="col">
-            <ul class="nav">
-              <li class="nav-item"><router-link class="nav-link" to='/'><img class="icon" src="../assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg /></router-link></li>
-              <li class="nav-item"><router-link class="nav-link" to='/'><img class="icon" src="../assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg /></router-link></li>
-              <li class="nav-item"><router-link class="nav-link" to='/'><img class="icon" src="../assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg /></router-link></li>
-            </ul>
+            <div class="my-5"><NuxtLink to="/contact" class="btn btn-lg btn-primary">Get In Touch</NuxtLink></div>
           </div>
         </div>
         <div class="row">

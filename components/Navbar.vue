@@ -5,7 +5,7 @@
           <div class="col flex-fill px-0 d-flex justify-content-between">
             <h3><NuxtLink class="text-white navbar-brand ml-0 fade-page" to="/">RIVRE OF SOMA <img src="../assets/img/logos/logo.png" alt="RIVRE OF SOMA"></NuxtLink></h3><button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation"><img class="icon navbar-toggler-open" src="../assets/img/icons/interface/menu.svg" alt="menu interface icon"><img class="icon navbar-toggler-close" src="../assets/img/icons/interface/cross.svg" alt="cross interface icon"></button>
           </div>
-          <div class="collapse navbar-collapse col px-0 px-lg-2 flex-fill">
+          <div class="collapse navbar-collapse col px-0 px-lg-2 flex-fill bg-black">
             <div class="py-2 py-lg-0">
               <ul class="navbar-nav">
                 <li class="nav-item"><NuxtLink class="nav-link text-white" to='/blog'> Blog </NuxtLink></li>
